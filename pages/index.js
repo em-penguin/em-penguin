@@ -15,15 +15,17 @@ export default function Home({ blog }) {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <Header />
-      <ul>
-        { blog.map((blog) => (
-          <li key={ blog.id }>
-            <Link href={ `/blog/${blog.id}` }>
-              { blog.title }
-            </Link>
-          </li>
-        )) }
-      </ul>
+      <main class="main">
+        <ul>
+          { blog.map((blog) => (
+            <li key={ blog.id }>
+              <Link href={ `/blog/${blog.id}` }>
+                { blog.title }
+              </Link>
+            </li>
+          )) }
+        </ul>
+      </main>
     </div >
   );
 }
