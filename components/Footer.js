@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import NavBar from "./NavBar";
 
 export default function Footer() {
     return (

@@ -18,15 +18,20 @@ export default function Home({ blog }) {
       </Head>
       <Header />
       <main class="main">
-        <ul>
-          { blog.map((blog) => (
-            <li key={ blog.id }>
-              <Link href={ `/blog/${blog.id}` }>
-                { blog.title }
-              </Link>
-            </li>
-          )) }
-        </ul>
+        <div class="main__wrapper">
+          <section class="blog">
+            <h2 class="blog__title">blog</h2>
+            <ul class="blog__item">
+              { blog.map((blog) => (
+                <li key={ blog.id }>
+                  <Link href={ `/blog/${blog.id}` }>
+                    { blog.title }
+                  </Link>
+                </li>
+              )) }
+            </ul>
+          </section>
+        </div>
       </main>
       <Footer />
     </div >
