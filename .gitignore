@@ -3,5 +3,5 @@
 .env.development.local
 .env.local
 
-.next
+/.next/
 node_modules
