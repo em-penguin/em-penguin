@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Link from "next/link";
 import { client } from "../libs/client";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 
 export default function Home({ blog }) {
   return (
@@ -26,6 +28,7 @@ export default function Home({ blog }) {
           )) }
         </ul>
       </main>
+      <Footer />
     </div >
   );
 }
