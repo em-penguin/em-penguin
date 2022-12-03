@@ -1,0 +1,64 @@
+$main-color: blue;
+$sub-color: yellow;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+// 全体のレイアウト
+.body__wrapper {
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    min-height: 100vh;
+    .main__wrapper {
+      display: flex;
+      .nav-icon {
+        position: fixed;
+      }
+    }
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+//ヘッダー
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  background-color: $main-color;
+  .header__nav ul {
+    display: flex;
+  }
+}
+
+//追従ナビ
+.nav-icon {
+  background-color: $main-color;
+}

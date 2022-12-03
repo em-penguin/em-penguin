@@ -2,12 +2,12 @@ import Head from 'next/head';
 import Link from "next/link";
 import { client } from "../libs/client";
 import Header from "../components/Header";
+import NavIcon from "../components/NavIcon";
 import Footer from "../components/Footer";
-
 
 export default function Home({ blog, photo }) {
   return (
-    <div>
+    <div class="body__wrapper">
       <Head>
         <title>kojima</title>
         <meta name="description" content="This is my portfolio page. The purpose of this page is to introduce my person, my coding style, and show off a little bit of my web development skills." />
@@ -19,30 +19,33 @@ export default function Home({ blog, photo }) {
       <Header />
       <main class="main">
         <div class="main__wrapper">
-          <section class="blog">
-            <h2 class="blog__title">Tech blog</h2>
-            <ul class="blog__item">
-              { blog.map((blog) => (
-                <li key={ blog.id }>
-                  <Link href={ `/blog/${blog.id}` }>
-                    { blog.title }
-                  </Link>
-                </li>
-              )) }
-            </ul>
-          </section>
-          <section class="photo">
-            <h2 class="photo__title">Photo</h2>
-            <ul class="photo__item">
-              { photo.map((photo) => (
-                <li key={ photo.id }>
-                  <Link href={ `/photo/${photo.id}` }>
-                    { photo.title }
-                  </Link>
-                </li>
-              )) }
-            </ul>
-          </section>
+          <NavIcon />
+          <dev class="main__section">
+            <section class="blog">
+              <h2 class="blog__title">Tech blog</h2>
+              <ul class="blog__item">
+                { blog.map((blog) => (
+                  <li key={ blog.id }>
+                    <Link href={ `/blog/${blog.id}` }>
+                      { blog.title }
+                    </Link>
+                  </li>
+                )) }
+              </ul>
+            </section>
+            <section class="photo">
+              <h2 class="photo__title">Photo</h2>
+              <ul class="photo__item">
+                { photo.map((photo) => (
+                  <li key={ photo.id }>
+                    <Link href={ `/photo/${photo.id}` }>
+                      { photo.title }
+                    </Link>
+                  </li>
+                )) }
+              </ul>
+            </section>
+          </dev>
         </div>
       </main>
       <Footer />
