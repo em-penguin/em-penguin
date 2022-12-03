@@ -1,9 +1,14 @@
 import Head from 'next/head';
 import Link from "next/link";
+import Image from "next/image";
 import { client } from "../libs/client";
+import {
+  fv
+} from '../assets'
 import Header from "../components/Header";
 import NavIcon from "../components/NavIcon";
 import Footer from "../components/Footer";
+
 
 export default function Home({ blog, photo }) {
   return (
@@ -20,7 +25,12 @@ export default function Home({ blog, photo }) {
       <main class="main">
         <div class="main__wrapper">
           <NavIcon />
-          <dev class="main__section">
+          <div class="main__section">
+            <div class="fv">
+              <Image
+                alt="fv"
+                src={ fv } />
+            </div>
             <section class="blog">
               <h2 class="blog__title">Tech blog</h2>
               <ul class="blog__item">
@@ -45,7 +55,7 @@ export default function Home({ blog, photo }) {
                 )) }
               </ul>
             </section>
-          </dev>
+          </div>
         </div>
       </main>
       <Footer />

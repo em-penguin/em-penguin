@@ -32,14 +32,19 @@ a {
 .body__wrapper {
   header {
     width: 100%;
+    position: fixed;
+    height: 50px;
   }
   main {
     width: 100%;
     min-height: 100vh;
     .main__wrapper {
-      display: flex;
+      text-align: center;
       .nav-icon {
         position: fixed;
+      }
+      .main__section {
+        padding-top: 50px;
       }
     }
   }
@@ -48,17 +53,32 @@ a {
   }
 }
 
-//ヘッダー
+//ヘッダ
 .header__wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: $main-color;
-  .header__nav ul {
-    display: flex;
+  padding: 1% 2%;
+  .header__nav {
+    ul {
+      display: flex;
+      justify-content: end;
+      li {
+        padding: 0 12%;
+      }
+    }
   }
 }
 
 //追従ナビ
 .nav-icon {
   background-color: $main-color;
+  position: fixed;
+  margin-left: 2%;
+  margin-top: 25vh;
+  padding: 20px 10px;
+  li {
+    width: 30px;
+    padding: 5px 0;
+  }
 }
