@@ -3,7 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
 import {
-  fv
+  fv,
+  blogFv
 } from '../assets'
 import Header from "../components/Header";
 import NavIcon from "../components/NavIcon";
@@ -32,28 +33,41 @@ export default function Home({ blog, photo }) {
                 src={ fv } />
             </div>
             <section class="blog">
-              <h2 class="blog__title">Tech blog</h2>
-              <ul class="blog__item">
-                { blog.map((blog) => (
-                  <li key={ blog.id }>
-                    <Link href={ `/blog/${blog.id}` }>
-                      { blog.title }
-                    </Link>
-                  </li>
-                )) }
-              </ul>
+              <div class="blog__wrapper">
+                <div class="blog__title">
+                  <div class="title__img">
+                    <Image
+                      alt="blog"
+                      src={ blogFv } />
+                  </div>
+                  <h2 class="title__text">Blog</h2>
+                </div>
+                <ul class="blog__item">
+                  { blog.map((blog) => (
+                    <li key={ blog.id }>
+                      <Link href={ `/blog/${blog.id}` }>
+                        { blog.title }
+                      </Link>
+                    </li>
+                  )) }
+                </ul>
+              </div>
             </section>
             <section class="photo">
-              <h2 class="photo__title">Photo</h2>
-              <ul class="photo__item">
-                { photo.map((photo) => (
-                  <li key={ photo.id }>
-                    <Link href={ `/photo/${photo.id}` }>
-                      { photo.title }
-                    </Link>
-                  </li>
-                )) }
-              </ul>
+              <div class="photo__wrapper">
+                <ul class="photo__item">
+                  { photo.map((photo) => (
+                    <li key={ photo.id }>
+                      <Link href={ `/photo/${photo.id}` }>
+                        { photo.title }
+                      </Link>
+                    </li>
+                  )) }
+                </ul>
+              </div>
+            </section>
+            <section class="contact">
+
             </section>
           </div>
         </div>

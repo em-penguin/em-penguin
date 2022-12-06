@@ -33,18 +33,19 @@ a {
   header {
     width: 100%;
     position: fixed;
-    height: 50px;
   }
   main {
     width: 100%;
     min-height: 100vh;
     .main__wrapper {
       text-align: center;
+      padding: 0 2vw;
+      margin: 0 auto;
       .nav-icon {
         position: fixed;
       }
       .main__section {
-        padding-top: 50px;
+        padding-top: 3.6rem;
       }
     }
   }
@@ -53,18 +54,19 @@ a {
   }
 }
 
-//ヘッダ
+//ヘッダ-
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 2%;
+  padding: 1vw 2vw;
+  height: 3.6rem;
   .header__nav {
     ul {
       display: flex;
       justify-content: end;
       li {
-        padding: 0 12%;
+        padding: 0 2vw;
       }
     }
   }
@@ -74,11 +76,67 @@ a {
 .nav-icon {
   background-color: $main-color;
   position: fixed;
-  margin-left: 2%;
-  margin-top: 25vh;
-  padding: 20px 10px;
+  margin-left: 1vw;
+  margin-top: 35vh;
+  padding: 1rem 0.6rem;
+  z-index: 100;
   li {
-    width: 30px;
-    padding: 5px 0;
+    width: 1.6rem;
+    padding: 0.6rem 0;
   }
+}
+
+//main__section
+.main__section {
+  .fv {
+    height: 16vw;
+    overflow: hidden;
+    img {
+      width: 100vw;
+    }
+  }
+}
+
+//section
+.blog {
+  padding: 3vw;
+  background-color: #eee;
+  .blog__wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .blog__title {
+    position: relative;
+    .title__img {
+      height: 11vw;
+      overflow: hidden;
+      img {
+        width: 100vw;
+      }
+    }
+    .title__text {
+      position: absolute;
+      top: 2vw;
+      left: 25%;
+      width: 50%;
+      font-size: 3vw;
+    }
+  }
+  .blog__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -3vw;
+    padding: 0 2vw;
+    z-index: 10;
+    position: relative;
+    li {
+      width: 33%;
+      height: 10vw;
+      background: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
 }
