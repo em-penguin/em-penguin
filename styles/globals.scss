@@ -103,10 +103,7 @@ a {
 
 //blog
 .blog {
-  .blog__wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
+  background: $sub-color;
   .blog__title {
     position: relative;
     .title__img {
@@ -121,7 +118,6 @@ a {
       top: 2vw;
       left: 25%;
       width: 50%;
-      font-size: 3vw;
     }
   }
   .blog__item {
@@ -133,7 +129,8 @@ a {
     z-index: 10;
     position: relative;
     li {
-      width: 33%;
+      width: 49.5%;
+      margin-bottom: 1%;
       height: 10vw;
       background: #fff;
     }
@@ -157,6 +154,33 @@ a {
 }
 .footer {
   background-color: $main-color;
+}
+
+//photo
+.photo {
+  padding-top: 0 !important;
+}
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -1%; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 1%; /* gutter size */
+  background-clip: padding-box;
+  a {
+    display: block;
+    padding-bottom: 3%;
+  }
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
 }
 
 //contact

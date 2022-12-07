@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
+import Masonry from 'react-masonry-css'
 import {
   fv,
   blogFv
@@ -53,19 +54,6 @@ export default function Home({ blog, photo }) {
                 </ul>
               </div>
             </section>
-            <section className="photo">
-              <div className="photo__wrapper">
-                <ul className="photo__item">
-                  { photo.map((photo) => (
-                    <li key={ photo.id }>
-                      <Link href={ `/photo/${photo.id}` }>
-                        { photo.title }
-                      </Link>
-                    </li>
-                  )) }
-                </ul>
-              </div>
-            </section>
             <section className="about">
               <div className="about__wrapper">
                 <div className="about__left">
@@ -79,6 +67,20 @@ export default function Home({ blog, photo }) {
                     これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。ドロップでページ内のどこにでも自由に移動させることができます。
                   </p>
                 </div>
+              </div>
+            </section>
+            <section className="photo">
+              <div className="photo__wrapper">
+                <Masonry
+                  breakpointCols={ 4 }
+                  className="my-masonry-grid"
+                  columnClassName="my-masonry-grid_column">
+                  { photo.map((photo) => (
+                    <Link href={ `/photo/${photo.id}` }>
+                      <Image src={ photo.img.url } width={ photo.img.width } height={ photo.img.height } />
+                    </Link>
+                  )) }
+                </Masonry>
               </div>
             </section>
             <section className="contact">
