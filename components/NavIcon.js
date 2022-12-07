@@ -7,7 +7,7 @@ import {
 
 export default function NavIcon() {
     return (
-        <div class="nav-icon">
+        <div className="nav-icon">
             <ul>
                 <li>
                     <Link href="https://twitter.com/_em_penguin">

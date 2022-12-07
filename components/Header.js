@@ -5,11 +5,11 @@ import NavBar from "./NavBar";
 
 export default function Header() {
     return (
-        <header class="header">
-            <div class="header__wrapper">
-                <div class="header__logo">
+        <header className="header">
+            <div className="header__wrapper">
+                <div className="header__logo">
                     <Link href="/">
-                        <h1 class="header__logo-text">kojima</h1>
+                        <h1 className="header__logo-text">kojima</h1>
                     </Link>
                 </div>
                 <NavBar />

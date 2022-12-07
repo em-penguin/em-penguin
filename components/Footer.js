@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 
 export default function Footer() {
     return (
-        <footer class="footer">
+        <footer className="footer">
             <NavBar />
         </footer>
     )

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function NavBar() {
 
     return (
-        <nav class="header__nav">
+        <nav className="header__nav">
             <ul>
                 <li>
                     <Link href="">about</Link>

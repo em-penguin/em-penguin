@@ -17,11 +17,11 @@ export default function Photo({ photo }) {
                 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
             </Head>
             <Header />
-            <main class="main">
-                <div class="main__wrapper">
-                    <section class="photo">
-                        <h2 class="photo__title">Photo</h2>
-                        <ul class="photo__item">
+            <main className="main">
+                <div className="main__wrapper">
+                    <section className="photo">
+                        <h2 className="photo__title">Photo</h2>
+                        <ul className="photo__item">
                             { photo.map((photo) => (
                                 <li key={ photo.id }>
                                     <Link href={ `/photo/${photo.id}` }>
