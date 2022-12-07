@@ -76,7 +76,7 @@ export default function Home({ blog, photo }) {
                   className="my-masonry-grid"
                   columnClassName="my-masonry-grid_column">
                   { photo.map((photo) => (
-                    <Link href={ `/photo/${photo.id}` }>
+                    <Link href={ `/photo/${photo.id}` } key={ photo.id }>
                       <Image src={ photo.img.url } width={ photo.img.width } height={ photo.img.height } />
                     </Link>
                   )) }
