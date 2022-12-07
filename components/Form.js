@@ -19,7 +19,9 @@ export default function Form() {
                     <label htmlFor="content">お問い合わせ内容</label>
                     <textarea name="content" type="text" rows="10" required></textarea>
                 </div>
-                <button type="submit">送信する</button>
+                <div className="submit">
+                    <button type="submit">送信する</button>
+                </div>
             </form>
         </div>
     )

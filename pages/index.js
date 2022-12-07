@@ -84,6 +84,10 @@ export default function Home({ blog, photo }) {
             <section className="contact">
               <div className="contact__wrapper">
                 <div className="contact__left">
+                  <h2 className="contact__title">Contact</h2>
+                  <p className="contact__text">
+                    これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。ドロップでページ内のどこにでも自由に移動させることができます。
+                  </p>
                 </div>
                 <div className="contact__right">
                   <Form />
