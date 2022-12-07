@@ -3,4 +3,5 @@
 .env.development.local
 .env.local
 
+.next/
 node_modules/
