@@ -59,7 +59,7 @@ export default function Home({ blog, photo }) {
                 <div className="about__left">
                   <Image
                     alt="about"
-                    src={ fv } />
+                    src={ mainFv } />
                 </div>
                 <div className="about__right">
                   <h2 className="about__title">About</h2>
