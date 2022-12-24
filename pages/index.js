@@ -4,7 +4,7 @@ import Image from "next/image";
 import { client } from "../libs/client";
 import Masonry from 'react-masonry-css'
 import {
-  fv,
+  mainFv,
   blogFv
 } from '../assets'
 import Header from "../components/Header";
@@ -31,7 +31,7 @@ export default function Home({ blog, photo }) {
             <div className="fv">
               <Image
                 alt="fv"
-                src={ fv } />
+                src={ mainFv } />
             </div>
             <section className="blog">
               <div className="blog__wrapper">
@@ -77,7 +77,7 @@ export default function Home({ blog, photo }) {
                   columnClassName="my-masonry-grid_column">
                   { photo.map((photo) => (
                     <Link href={ `/photo/${photo.id}` } key={ photo.id }>
-                      <Image src={ photo.img.url } width={ photo.img.width } height={ photo.img.height } />
+                      <Image src={ photo.img.url } width={ photo.img.width } height={ photo.img.height } key={ photo.id } />
                     </Link>
                   )) }
                 </Masonry>
