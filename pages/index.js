@@ -11,6 +11,9 @@ import Header from "../components/Header";
 import NavIcon from "../components/NavIcon";
 import Footer from "../components/Footer";
 import Form from "../components/Form";
+import ImgSlide from "../libs/ImgSlide"
+import Fadein from "../libs/Fadein"
+
 
 export default function Home({ blog, photo }) {
   return (
@@ -28,12 +31,8 @@ export default function Home({ blog, photo }) {
         <div className="main__wrapper">
           <NavIcon />
           <div className="main__section">
-            <div className="fv">
-              <Image
-                alt="fv"
-                src={ mainFv } />
-            </div>
-            <section className="blog">
+            <ImgSlide />
+            <section id="blog" className="blog">
               <div className="blog__wrapper">
                 <div className="blog__title">
                   <div className="title__img">
@@ -43,58 +42,66 @@ export default function Home({ blog, photo }) {
                   </div>
                   <h2 className="title__text">Blog</h2>
                 </div>
-                <ul className="blog__item">
-                  { blog.map((blog) => (
-                    <li key={ blog.id }>
-                      <Link href={ `/blog/${blog.id}` } key={ blog.id }>
-                        { blog.title }
-                      </Link>
-                    </li>
-                  )) }
-                </ul>
+                <Fadein>
+                  <ul className="blog__item">
+                    { blog.map((blog) => (
+                      <li key={ blog.id }>
+                        <Link href={ `/blog/${blog.id}` } key={ blog.id }>
+                          { blog.title }
+                        </Link>
+                      </li>
+                    )) }
+                  </ul>
+                </Fadein>
               </div>
             </section>
-            <section className="about">
-              <div className="about__wrapper">
-                <div className="about__left">
-                  <Image
-                    alt="about"
-                    src={ mainFv } />
+            <section id="about" className="about">
+              <Fadein>
+                <div className="about__wrapper">
+                  <div className="about__left">
+                    <Image
+                      alt="about"
+                      src={ mainFv } />
+                  </div>
+                  <div className="about__right">
+                    <h2 className="about__title">About</h2>
+                    <p className="about__text">
+                      これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。ドロップでページ内のどこにでも自由に移動させることができます。
+                    </p>
+                  </div>
                 </div>
-                <div className="about__right">
-                  <h2 className="about__title">About</h2>
-                  <p className="about__text">
-                    これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。ドロップでページ内のどこにでも自由に移動させることができます。
-                  </p>
-                </div>
-              </div>
+              </Fadein>
             </section>
-            <section className="photo">
+            <section id="photo" className="photo">
               <div className="photo__wrapper">
                 <Masonry
                   breakpointCols={ 4 }
                   className="my-masonry-grid"
                   columnClassName="my-masonry-grid_column">
                   { photo.map((photo) => (
-                    <Link href={ `/photo/${photo.id}` } key={ photo.id }>
-                      <Image src={ photo.img.url } width={ photo.img.width } height={ photo.img.height } key={ photo.id } />
-                    </Link>
+                    <Fadein>
+                      <Link href={ `/photo/${photo.id}` } key={ photo.id }>
+                        <Image src={ photo.img.url } width={ photo.img.width } height={ photo.img.height } key={ photo.id } />
+                      </Link>
+                    </Fadein>
                   )) }
                 </Masonry>
               </div>
             </section>
-            <section className="contact">
-              <div className="contact__wrapper">
-                <div className="contact__left">
-                  <h2 className="contact__title">Contact</h2>
-                  <p className="contact__text">
-                    これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。ドロップでページ内のどこにでも自由に移動させることができます。
-                  </p>
+            <section id="contact" className="contact">
+              <Fadein>
+                <div className="contact__wrapper">
+                  <div className="contact__left">
+                    <h2 className="contact__title">Contact</h2>
+                    <p className="contact__text">
+                      これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。ドロップでページ内のどこにでも自由に移動させることができます。
+                    </p>
+                  </div>
+                  <div className="contact__right">
+                    <Form />
+                  </div>
                 </div>
-                <div className="contact__right">
-                  <Form />
-                </div>
-              </div>
+              </Fadein>
             </section>
           </div>
         </div>
