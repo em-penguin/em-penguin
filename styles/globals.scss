@@ -65,7 +65,7 @@ a {
   align-items: center;
   padding: 1vw 2vw;
   height: 3.6rem;
-  .header__nav {
+  .navbar {
     ul {
       display: flex;
       justify-content: end;
@@ -77,7 +77,7 @@ a {
 }
 
 //追従ナビ
-.nav-icon {
+.main__wrapper > .nav-icon {
   background-color: $main-color;
   position: fixed;
   margin-left: 1vw;
@@ -85,7 +85,7 @@ a {
   padding: 1rem 0.6rem;
   z-index: 100;
   li {
-    width: 1.6rem;
+    width: 1.2rem;
     padding: 0.6rem 0;
   }
 }
@@ -93,10 +93,11 @@ a {
 //main__section
 .main__section {
   .fv {
-    height: 16vw;
+    height: 24vw;
     overflow: hidden;
     img {
       width: 100vw;
+      transform: translateY(-8vw);
     }
   }
 }
@@ -142,6 +143,9 @@ a {
   .about__wrapper {
     display: flex;
     align-items: center;
+    .about__title {
+      margin-bottom: 1vw;
+    }
     .about__left,
     .about__right {
       width: 50%;
@@ -151,9 +155,6 @@ a {
       text-align: initial;
     }
   }
-}
-.footer {
-  background-color: $main-color;
 }
 
 //photo
@@ -176,19 +177,15 @@ a {
   }
 }
 
-/* Style your items */
-.my-masonry-grid_column > div {
-  /* change div to reference your elements you put in <Masonry> */
-  background: grey;
-  margin-bottom: 30px;
-}
-
 //contact
 .contact {
   background: $sub-color;
   .contact__wrapper {
     display: flex;
     align-items: center;
+    .contact__title {
+      margin-bottom: 1vw;
+    }
     .contact__left,
     .contact__right {
       width: 50%;
@@ -210,7 +207,7 @@ a {
     box-sizing: border-box;
     border: solid 1px #ddd;
     background: $sub-color;
-    padding: 10px;
+    padding: 5px;
     font-size: 16px;
     outline: none;
     appearance: none;
@@ -233,6 +230,35 @@ a {
   button:hover {
     cursor: pointer;
     opacity: 0.7;
+  }
+}
+
+//footer
+.footer {
+  background-color: $main-color;
+  .footer__wrapper {
+    padding: 5vw 0;
+  }
+  .navbar {
+    margin-bottom: 3vw;
+    ul {
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      li {
+        padding: 0 2vw;
+      }
+    }
+  }
+  .nav-icon {
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        width: 1.2rem;
+        margin: 0 0.6rem;
+      }
+    }
   }
 }
 

@@ -4,19 +4,19 @@ import Link from "next/link";
 export default function NavBar() {
 
     return (
-        <nav className="header__nav">
+        <nav className="navbar">
             <ul>
                 <li>
-                    <Link href="">about</Link>
+                    <Link href="#about">about</Link>
                 </li>
                 <li>
-                    <Link href="">blog</Link>
+                    <Link href="#blog">blog</Link>
                 </li>
                 <li>
-                    <Link href="">photo</Link>
+                    <Link href="#photo">photo</Link>
                 </li>
                 <li>
-                    <Link href="">contact</Link>
+                    <Link href="#contact">contact</Link>
                 </li>
             </ul>
         </nav>
