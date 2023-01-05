@@ -16,6 +16,12 @@ import Fadein from "../libs/Fadein"
 
 
 export default function Home({ blog, photo }) {
+  // 1行に表示するカラム数
+  const breakpointColumnsObj = {
+    default: 4,
+    1180: 3,
+    768: 2,
+  }
   return (
     <div className="body__wrapper">
       <Head>
@@ -75,7 +81,7 @@ export default function Home({ blog, photo }) {
             <section id="photo" className="photo">
               <div className="photo__wrapper">
                 <Masonry
-                  breakpointCols={ 4 }
+                  breakpointCols={ breakpointColumnsObj }
                   className="my-masonry-grid"
                   columnClassName="my-masonry-grid_column">
                   { photo.map((photo) => (
