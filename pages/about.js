@@ -27,7 +27,7 @@ export default function About({ }) {
             </Head>
             <Header />
             <main className="main">
-                <div id="experience" className="main__wrapper">
+                <div id="about" className="main__wrapper">
                     <NavIcon />
                     <div className="main__section">
                         <ImgSlide />
