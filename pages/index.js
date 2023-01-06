@@ -11,6 +11,7 @@ import Header from "../components/Header";
 import NavIcon from "../components/NavIcon";
 import Footer from "../components/Footer";
 import Form from "../components/Form";
+import SkillsLogo from "../components/SkillsLogo";
 import ImgSlide from "../libs/ImgSlide"
 import Fadein from "../libs/Fadein"
 
@@ -31,6 +32,7 @@ export default function Home({ blog, photo }) {
         <meta name="keywords" content="kojima, ayaka, Portfolio, Frontend" />
         <meta property="og:image" content="" key="ogimage" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
       </Head>
       <Header />
       <main className="main">
@@ -61,19 +63,23 @@ export default function Home({ blog, photo }) {
                 </Fadein>
               </div>
             </section>
-            <section id="about" className="about">
+            <section className="about">
               <Fadein>
                 <div className="about__wrapper">
                   <div className="about__left">
-                    <Image
-                      alt="about"
-                      src={ mainFv } />
+                    <Link href="/about/">
+                      <Image
+                        alt="about"
+                        src={ mainFv } />
+                    </Link>
                   </div>
                   <div className="about__right">
                     <h2 className="about__title">About</h2>
                     <p className="about__text">
-                      これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。ドロップでページ内のどこにでも自由に移動させることができます。
+                      フロントエンドエンジニア4年目です。主にWordPressの保守・改修を行なっています。
+                      2022年の秋に応用情報技術者試験を取得し、現在はReactを勉強しています。
                     </p>
+                    <SkillsLogo />
                   </div>
                 </div>
               </Fadein>
