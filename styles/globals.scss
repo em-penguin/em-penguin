@@ -379,6 +379,17 @@ a {
       display: flex;
       align-items: center;
       flex-direction: column-reverse;
+      .skills-logo {
+        margin-top: 1vw;
+        margin-top: 1vw;
+        display: flex;
+        flex-wrap: wrap;
+        i {
+          font-size: 3.3vw;
+          padding: 0.4vw;
+          color: #333;
+        }
+      }
       .about__left,
       .about__right {
         width: 100%;
