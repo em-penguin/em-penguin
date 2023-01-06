@@ -13,13 +13,7 @@ import ImgSlide from "../libs/ImgSlide"
 import Fadein from "../libs/Fadein"
 
 
-export default function Home({ blog, photo }) {
-    // 1行に表示するカラム数
-    const breakpointColumnsObj = {
-        default: 4,
-        1180: 3,
-        768: 2,
-    }
+export default function About({ }) {
     return (
         <div className="body__wrapper">
             <Head>
