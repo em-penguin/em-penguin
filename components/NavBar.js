@@ -7,7 +7,7 @@ export default function NavBar() {
         <nav className="navbar">
             <ul>
                 <li>
-                    <Link href="#about">about</Link>
+                    <Link href="/about/">about</Link>
                 </li>
                 <li>
                     <Link href="#blog">blog</Link>
