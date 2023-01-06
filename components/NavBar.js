@@ -13,10 +13,7 @@ export default function NavBar() {
                     <Link href="#blog">blog</Link>
                 </li>
                 <li>
-                    <Link href="#photo">photo</Link>
-                </li>
-                <li>
-                    <Link href="#contact">contact</Link>
+                    <Link href="/contact/">contact</Link>
                 </li>
             </ul>
         </nav>
