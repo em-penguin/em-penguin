@@ -100,7 +100,7 @@ export default function Home({ blog, photo }) {
                 </Masonry>
               </div>
             </section>
-            <section id="contact" className="contact">
+            <section className="contact">
               <Fadein>
                 <div className="contact__wrapper">
                   <div className="contact__left">
