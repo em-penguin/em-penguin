@@ -55,7 +55,16 @@ export default function Blog({ blog }) {
                                         { blog.map((blog) => (
                                             <li key={ blog.id }>
                                                 <Link href={ `/blog/${blog.id}` } key={ blog.id }>
-                                                    { blog.title }
+                                                    <div className="blog__left">
+                                                        <Image
+                                                            alt={ blog.title }
+                                                            width={ blog.img["width"] }
+                                                            height={ blog.img["height"] }
+                                                            src={ blog.img["url"] } />
+                                                    </div>
+                                                    <div className="blog__right">
+                                                        { blog.title }
+                                                    </div>
                                                 </Link>
                                             </li>
                                         )) }
