@@ -1,6 +1,7 @@
 export { default as mainFv } from './main/fv.jpg'
 export { default as mainAbout } from './main/about.gif'
 export { default as blogFv } from './blog/fv.jpg'
+export { default as aboutFv } from './about/aboutFv.gif'
 export { default as logosMail } from './logos/mail.svg'
 export { default as logosTwitter } from './logos/twitter.svg'
 export { default as logosCompass } from './logos/compass.svg'

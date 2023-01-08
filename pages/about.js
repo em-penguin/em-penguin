@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {
     mainFv,
+    aboutFv
 } from '../assets'
 import Header from "../components/Header";
 import NavIcon from "../components/NavIcon";
@@ -31,54 +32,88 @@ export default function About({ }) {
                     <NavIcon />
                     <div className="main__section">
                         <ImgSlide />
-                        <section className="sumary">
-                            <Fadein>
-                                <div className="sumary__wrapper">
-                                    <div className="sumary__right">
-                                        <h2 className="sumary__title">sumary</h2>
-                                        <p className="sumary__text">
-                                            フロントエンドエンジニア4年目です。主にWordPressの保守・改修を行なっています。
-                                            2022年の秋に応用情報技術者試験を取得し、現在はReactを勉強しています。
-                                        </p>
-                                    </div>
+                        <div className='about'>
+                            <div className="about__column">
+                                <div className="about__img section">
+                                    <Image
+                                        alt="fv"
+                                        src={ aboutFv } />
                                 </div>
-                            </Fadein>
-                        </section>
-                        <section className="experience">
-                            <Fadein>
-                                <div className="experience__wrapper">
-                                    <div className="experience__right">
-                                        <h2 className="experience__title">experience</h2>
-                                        <p className="experience__text">
-                                            フロントエンドエンジニア4年目です。主にWordPressの保守・改修を行なっています。
-                                            2022年の秋に応用情報技術者試験を取得し、現在はReactを勉強しています。
-                                        </p>
-                                    </div>
-                                </div>
-                            </Fadein>
-                        </section>
-                        <section className="skills">
-                            <Fadein>
-                                <div className="skills__wrapper">
-                                    <div className="skills__right">
-                                        <h2 className="skills__title">skills</h2>
-                                        <p className="skills__text">
-                                            フロントエンドエンジニア4年目です。主にWordPressの保守・改修を行なっています。
-                                            2022年の秋に応用情報技術者試験を取得し、現在はReactを勉強しています。
-                                        </p>
-                                        <SkillsLogo />
-                                    </div>
-                                </div>
-                            </Fadein>
-                        </section>
+                                <section className="sumary section">
+                                    <Fadein>
+                                        <div className="sumary__wrapper">
+                                            <h2 className="sumary__title title">sumary</h2>
+                                            <p className="sumary__text text">
+                                                高校卒業後、デザイナーとして建築関係の会社に入社。サインデザインや、図面の作成をしました。
+                                                その後、スポーツジムの会社に転職。事務として報酬計算、給与明細作成を行いました。その際に効率化のため、ExcelVBAやGASを使用。<br />
+                                                ExcelVBAやGASをを通してプログラミングに興味を持ちました。エンジニアを目指し、2020年に株式会社レバレッジに転職。フロントエンドエンジニアとして、自社サービスの保守・改修・新規開発を行なっています。
+                                                現在はReactを勉強中です。
+                                            </p>
+                                            <SkillsLogo />
+                                        </div>
+                                    </Fadein>
+                                </section>
+                            </div>
+                            <div className="about__column">
+                                <section className="skills section">
+                                    <Fadein>
+                                        <div className="skills__wrapper">
+                                            <h2 className="skills__title title">skills</h2>
+                                            <p className="skills__text text">
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                            </p>
+                                        </div>
+                                    </Fadein>
+                                </section>
+                                <section className="experience section">
+                                    <Fadein>
+                                        <div className="experience__wrapper">
+                                            <h2 className="experience__title title">experience</h2>
+                                            <ul className="experience__timeline">
+                                                <li>
+                                                    <p class="experience__timeline-date">2016/03</p>
+                                                    <div class="experience__timeline-content">
+                                                        <h3>工芸高等学校デザイン科を卒業</h3>
+                                                        <p>ワーホリビザで渡加。アクセサリーショップ等でバイト。カナダ生活を満喫。</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <p class="experience__timeline-date">2016/04</p>
+                                                    <div class="experience__timeline-content">
+                                                        <h3>建築関係のデザイナーとして就職</h3>
+                                                        <p>ワーホリビザで渡加。アクセサリーショップ等でバイト。カナダ生活を満喫。</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <p class="experience__timeline-date">2018/11</p>
+                                                    <div class="experience__timeline-content">
+                                                        <h3>スポーツジムの事務職に転職</h3>
+                                                        <p>ワーホリビザで渡加。アクセサリーショップ等でバイト。カナダ生活を満喫。</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <p class="experience__timeline-date">2020/02</p>
+                                                    <div class="experience__timeline-content">
+                                                        <h3>自社開発のフロントエンジニアに転職</h3>
+                                                        <p>ワーホリビザで渡加。アクセサリーショップ等でバイト。カナダ生活を満喫。</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </Fadein>
+                                </section>
+                            </div>
+                        </div>
                         <section className="contact">
                             <Fadein>
                                 <div className="contact__wrapper">
                                     <div className="contact__left">
                                         <h2 className="contact__title">Contact</h2>
-                                        <p className="contact__text">
-                                            これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。ドロップでページ内のどこにでも自由に移動させることができます。
-                                        </p>
                                     </div>
                                     <div className="contact__right">
                                         <Form />
@@ -88,7 +123,7 @@ export default function About({ }) {
                         </section>
                     </div>
                 </div>
-            </main>
+            </main >
             <Footer />
         </div >
     );
