@@ -43,7 +43,7 @@ export default function About({ }) {
                                     <Fadein>
                                         <div className="sumary__wrapper">
                                             <h2 className="sumary__title title">sumary</h2>
-                                            <p className="sumary__text text">
+                                            <p className="sumary__text">
                                                 高校卒業後、デザイナーとして建築関係の会社に入社。サインデザインや、図面の作成をしました。
                                                 その後、スポーツジムの会社に転職。事務として報酬計算、給与明細作成を行いました。その際に効率化のため、ExcelVBAやGASを使用。<br />
                                                 ExcelVBAやGASをを通してプログラミングに興味を持ちました。エンジニアを目指し、2020年に株式会社レバレッジに転職。フロントエンドエンジニアとして、自社サービスの保守・改修・新規開発を行なっています。
@@ -96,9 +96,23 @@ export default function About({ }) {
                                     <Fadein>
                                         <div className="skills__wrapper">
                                             <h2 className="skills__title title">skills</h2>
-                                            <p className="skills__text text">
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                            </p>
+                                            <div className="skills__language">
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                ^^^^^^^^^^^^^^^^^^^^
+                                            </div>
+                                            <ul className="skills__qualification">
+                                                <li>
+                                                    <p className='skills__qualification-date'>2021/12</p>
+                                                    <p className='skills__qualification-title'>基本情報技術者試験</p>
+                                                </li>
+                                                <li>
+                                                    <p className='skills__qualification-date'>2022/12</p>
+                                                    <p className='skills__qualification-title'>応用情報技術者試験</p>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </Fadein>
                                 </section>
