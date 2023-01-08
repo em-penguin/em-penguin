@@ -536,18 +536,20 @@ a {
       .title {
         margin-bottom: 1vw;
       }
+      .about__title {
+        display: none;
+      }
       .about__column {
         display: flex;
         justify-content: space-between;
         align-items: center;
         .section {
-          padding: 0;
           width: 50%;
           text-align: initial;
           padding: 1vw;
         }
       }
-      .about__column:nth-child(2) {
+      .about__column:nth-child(3) {
         align-items: flex-start;
       }
       .sumary__wrapper {
@@ -567,6 +569,45 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  #about {
+    .about {
+      padding: 1vw 5vw;
+      text-align: initial;
+      .title {
+        margin-bottom: 2vw;
+      }
+      .about__title {
+        text-align: center;
+        margin-top: 3vw;
+      }
+      .about__img {
+        padding-bottom: 0 !important;
+        margin: 0 auto;
+        img {
+          width: 50%;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+      }
+      .about__column {
+        .section {
+          padding: 3.6vw 0;
+        }
+      }
+      .sumary__wrapper {
+        .skills-logo {
+          margin-top: 2vw;
+          display: flex;
+          flex-wrap: wrap;
+          i {
+            font-size: 6.8vw;
+            padding: 1vw;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
 }
 
 //--blog page--

@@ -33,6 +33,7 @@ export default function About({ }) {
                     <div className="main__section">
                         <ImgSlide />
                         <div className='about'>
+                            <h1 className="about__title">Kojima Ayaka</h1>
                             <div className="about__column">
                                 <div className="about__img section">
                                     <Image
@@ -97,11 +98,6 @@ export default function About({ }) {
                                         <div className="skills__wrapper">
                                             <h2 className="skills__title title">skills</h2>
                                             <div className="skills__language">
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                                ^^^^^^^^^^^^^^^^^^^^
                                             </div>
                                             <ul className="skills__qualification">
                                                 <li>
