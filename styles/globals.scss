@@ -136,19 +136,19 @@ a {
       li {
         width: 49.5%;
         margin-bottom: 1%;
-        height: 10vw;
+        height: 12vw;
         background: #fff;
         a {
-          display: block;
           width: 100%;
           height: 100%;
           overflow: hidden;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 2;
-          /* 任意の行数 */
-          text-align: initial;
-          padding: 1vw;
+          display: flex;
+          .blog__left {
+            width: 12vw;
+          }
+          .blog__right {
+            padding: 1vw;
+          }
         }
       }
     }
@@ -386,12 +386,13 @@ a {
           width: 100%;
           height: 100%;
           overflow: hidden;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 2;
-          /* 任意の行数 */
-          text-align: initial;
-          padding: 1vw;
+          display: flex;
+          .blog__left {
+            width: 20vw;
+          }
+          .blog__right {
+            padding: 1vw;
+          }
         }
       }
     }
@@ -537,16 +538,6 @@ a {
 
 //--blog page--
 @media screen and (min-width: 769px) {
-  #blog {
-    .blog {
-      .blog__item {
-        display: block;
-        li {
-          width: 100%;
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 768px) {

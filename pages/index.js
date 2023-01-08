@@ -32,11 +32,15 @@ export default function Home({ blog, photo }) {
     blogList.push(
       <li li key={ blog[i].id } >
         <Link href={ `/blog/${blog[i].id}` } key={ blog[i].id }>
-          <div className="blog__item-title">
-            { blog[i].title }
+          <div className="blog__left">
+            <Image
+              alt={ blog[i].title }
+              width={ blog[i].img["width"] }
+              height={ blog[i].img["height"] }
+              src={ blog[i].img["url"] } />
           </div>
-          <div className="blog__item-body">
-            { blog[i].body }
+          <div className="blog__right">
+            { blog[i].title }
           </div>
         </Link>
       </li>
