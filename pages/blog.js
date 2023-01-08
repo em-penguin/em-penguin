@@ -63,6 +63,21 @@ export default function Blog({ blog }) {
                                 </Fadein>
                             </div>
                         </section>
+                        <section className="contact">
+                            <Fadein>
+                                <div className="contact__wrapper">
+                                    <div className="contact__left">
+                                        <h2 className="contact__title">Contact</h2>
+                                        <p className="contact__text">
+                                            これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。ドロップでページ内のどこにでも自由に移動させることができます。
+                                        </p>
+                                    </div>
+                                    <div className="contact__right">
+                                        <Form />
+                                    </div>
+                                </div>
+                            </Fadein>
+                        </section>
                     </div>
                 </div>
             </main>
