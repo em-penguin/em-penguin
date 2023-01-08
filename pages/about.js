@@ -55,21 +55,6 @@ export default function About({ }) {
                                 </section>
                             </div>
                             <div className="about__column">
-                                <section className="skills section">
-                                    <Fadein>
-                                        <div className="skills__wrapper">
-                                            <h2 className="skills__title title">skills</h2>
-                                            <p className="skills__text text">
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                            </p>
-                                        </div>
-                                    </Fadein>
-                                </section>
                                 <section className="experience section">
                                     <Fadein>
                                         <div className="experience__wrapper">
@@ -79,31 +64,41 @@ export default function About({ }) {
                                                     <p class="experience__timeline-date">2016/03</p>
                                                     <div class="experience__timeline-content">
                                                         <h3>工芸高等学校デザイン科を卒業</h3>
-                                                        <p>ワーホリビザで渡加。アクセサリーショップ等でバイト。カナダ生活を満喫。</p>
+                                                        <p>IllustratorやPhotoshopを3年間使用。V.I.(ビジュアルアイデンティティ)とプロダクトデザインを専攻しました。</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <p class="experience__timeline-date">2016/04</p>
                                                     <div class="experience__timeline-content">
                                                         <h3>建築関係のデザイナーとして就職</h3>
-                                                        <p>ワーホリビザで渡加。アクセサリーショップ等でバイト。カナダ生活を満喫。</p>
+                                                        <p>企画デザイン部に配属。建築業界でサインデザインや、図面の作成、建築士と打ち合わせを行いました。</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <p class="experience__timeline-date">2018/11</p>
                                                     <div class="experience__timeline-content">
                                                         <h3>スポーツジムの事務職に転職</h3>
-                                                        <p>ワーホリビザで渡加。アクセサリーショップ等でバイト。カナダ生活を満喫。</p>
+                                                        <p>事務として勤怠管理や、報酬計算、給与明細作成を行いました。その際に効率化のため、ExcelVBAやGASを学びました。</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <p class="experience__timeline-date">2020/02</p>
                                                     <div class="experience__timeline-content">
                                                         <h3>自社開発のフロントエンジニアに転職</h3>
-                                                        <p>ワーホリビザで渡加。アクセサリーショップ等でバイト。カナダ生活を満喫。</p>
+                                                        <p>フロントエンドエンジニアとして、自社サービスの保守・改修・新規開発を行なっています。</p>
                                                     </div>
                                                 </li>
                                             </ul>
+                                        </div>
+                                    </Fadein>
+                                </section>
+                                <section className="skills section">
+                                    <Fadein>
+                                        <div className="skills__wrapper">
+                                            <h2 className="skills__title title">skills</h2>
+                                            <p className="skills__text text">
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                            </p>
                                         </div>
                                     </Fadein>
                                 </section>
