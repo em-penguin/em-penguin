@@ -26,8 +26,8 @@ export default function About({ }) {
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
             </Head>
             <Header />
-            <main className="main">
-                <div id="about" className="main__wrapper">
+            <main id="about" className="main">
+                <div className="main__wrapper">
                     <NavIcon />
                     <div className="main__section">
                         <ImgSlide />
@@ -71,7 +71,7 @@ export default function About({ }) {
                                 </div>
                             </Fadein>
                         </section>
-                        <section id="contact" className="contact">
+                        <section className="contact">
                             <Fadein>
                                 <div className="contact__wrapper">
                                     <div className="contact__left">

@@ -138,6 +138,18 @@ a {
         margin-bottom: 1%;
         height: 10vw;
         background: #fff;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          /* 任意の行数 */
+          text-align: initial;
+          padding: 1vw;
+        }
       }
     }
   }
@@ -367,8 +379,20 @@ a {
       li {
         width: 100%;
         margin-bottom: 1%;
-        height: 10vw;
+        height: 20vw;
         background: #fff;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          /* 任意の行数 */
+          text-align: initial;
+          padding: 1vw;
+        }
       }
     }
   }
@@ -501,4 +525,29 @@ a {
       }
     }
   }
+}
+
+//--contact page--
+
+@media screen and (min-width: 769px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+//--blog page--
+@media screen and (min-width: 769px) {
+  #blog {
+    .blog {
+      .blog__item {
+        display: block;
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
 }

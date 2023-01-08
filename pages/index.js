@@ -23,6 +23,25 @@ export default function Home({ blog, photo }) {
     1180: 3,
     768: 2,
   }
+
+  const blogList = []
+  const blogNum = 4
+
+  for (let i = 0; i < blogNum; ++i) {
+    console.log(blog[i])
+    blogList.push(
+      <li li key={ blog[i].id } >
+        <Link href={ `/blog/${blog[i].id}` } key={ blog[i].id }>
+          <div className="blog__item-title">
+            { blog[i].title }
+          </div>
+          <div className="blog__item-body">
+            { blog[i].body }
+          </div>
+        </Link>
+      </li>
+    )
+  }
   return (
     <div className="body__wrapper">
       <Head>
@@ -52,13 +71,7 @@ export default function Home({ blog, photo }) {
                 </div>
                 <Fadein>
                   <ul className="blog__item">
-                    { blog.map((blog) => (
-                      <li key={ blog.id }>
-                        <Link href={ `/blog/${blog.id}` } key={ blog.id }>
-                          { blog.title }
-                        </Link>
-                      </li>
-                    )) }
+                    { blogList }
                   </ul>
                 </Fadein>
               </div>
@@ -100,7 +113,7 @@ export default function Home({ blog, photo }) {
                 </Masonry>
               </div>
             </section>
-            <section id="contact" className="contact">
+            <section className="contact">
               <Fadein>
                 <div className="contact__wrapper">
                   <div className="contact__left">
