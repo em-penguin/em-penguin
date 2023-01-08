@@ -1,11 +1,10 @@
 // pages/photo/[id].js
 import { client } from "../../libs/client";
-import styles from '../../styles/Home.module.scss';
 
 export default function PhotoId({ photo }) {
     return (
-        <main className={ styles.main }>
-            <h1 className={ styles.title }>{ photo.title }</h1>
+        <main className="">
+            <h1 className="">{ photo.title }</h1>
         </main>
     );
 }
