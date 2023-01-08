@@ -10,6 +10,7 @@ import NavIcon from "../components/NavIcon";
 import Footer from "../components/Footer";
 import Form from "../components/Form";
 import SkillsLogo from "../components/SkillsLogo";
+import Chart from "../components/Chart";
 import ImgSlide from "../libs/ImgSlide"
 import Fadein from "../libs/Fadein"
 
@@ -65,7 +66,7 @@ export default function About({ }) {
                                                     <p class="experience__timeline-date">2016/03</p>
                                                     <div class="experience__timeline-content">
                                                         <h3>工芸高等学校デザイン科を卒業</h3>
-                                                        <p>IllustratorやPhotoshopを3年間使用。V.I.(ビジュアルアイデンティティ)とプロダクトデザインを専攻しました。</p>
+                                                        <p>IllustratorやPhotoshopを3年間使用。<br />V.I.(ビジュアルアイデンティティ)とプロダクトデザインを専攻しました。</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -97,16 +98,27 @@ export default function About({ }) {
                                     <Fadein>
                                         <div className="skills__wrapper">
                                             <h2 className="skills__title title">skills</h2>
-                                            <div className="skills__language">
-                                            </div>
+                                            <ul className="skills__language">
+                                                <Chart title={ "HTML 5" } number={ 90 } />
+                                                <Chart title={ "CSS 3" } number={ 85 } />
+                                                <Chart title={ "SCSS" } number={ 30 } />
+                                                <Chart title={ "jQuery" } number={ 80 } />
+                                                <Chart title={ "JavaScript" } number={ 50 } />
+                                                <Chart title={ "PHP" } number={ 80 } />
+                                                <Chart title={ "React" } number={ 40 } />
+                                                <Chart title={ "Vue 3" } number={ 20 } />
+                                                <Chart title={ "WordPress" } number={ 90 } />
+                                                <Chart title={ "Illustrator" } number={ 90 } />
+                                                <Chart title={ "Photoshop" } number={ 80 } />
+                                            </ul>
                                             <ul className="skills__qualification">
                                                 <li>
                                                     <p className='skills__qualification-date'>2021/12</p>
-                                                    <p className='skills__qualification-title'>基本情報技術者試験</p>
+                                                    <p className='skills__qualification-title'>基本情報技術者試験 取得</p>
                                                 </li>
                                                 <li>
                                                     <p className='skills__qualification-date'>2022/12</p>
-                                                    <p className='skills__qualification-title'>応用情報技術者試験</p>
+                                                    <p className='skills__qualification-title'>応用情報技術者試験 取得</p>
                                                 </li>
                                             </ul>
                                         </div>
