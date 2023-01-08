@@ -63,7 +63,7 @@ export default function Home({ blog, photo }) {
           <NavIcon />
           <div className="main__section">
             <ImgSlide />
-            <section id="blog" className="blog">
+            <section className="blog">
               <div className="blog__wrapper">
                 <div className="blog__title">
                   <div className="title__img">

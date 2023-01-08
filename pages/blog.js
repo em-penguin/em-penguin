@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
-import Masonry from 'react-masonry-css'
 import {
     mainFv,
     blogFv
@@ -11,18 +10,10 @@ import Header from "../components/Header";
 import NavIcon from "../components/NavIcon";
 import Footer from "../components/Footer";
 import Form from "../components/Form";
-import SkillsLogo from "../components/SkillsLogo";
 import ImgSlide from "../libs/ImgSlide"
 import Fadein from "../libs/Fadein"
 
-
 export default function Blog({ blog }) {
-    // 1行に表示するカラム数
-    const breakpointColumnsObj = {
-        default: 4,
-        1180: 3,
-        768: 2,
-    }
     return (
         <div className="body__wrapper">
             <Head>
