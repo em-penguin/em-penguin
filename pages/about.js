@@ -99,16 +99,16 @@ export default function About({ }) {
                                         <div className="skills__wrapper">
                                             <h2 className="skills__title title">skills</h2>
                                             <ul className="skills__language">
-                                                <Chart title={ "HTML 5" } number={ 90 } />
-                                                <Chart title={ "CSS 3" } number={ 85 } />
+                                                <Chart title={ "HTML5" } number={ 90 } />
+                                                <Chart title={ "CSS3" } number={ 85 } />
                                                 <Chart title={ "SCSS" } number={ 30 } />
                                                 <Chart title={ "jQuery" } number={ 80 } />
                                                 <Chart title={ "JavaScript" } number={ 50 } />
-                                                <Chart title={ "PHP" } number={ 80 } />
-                                                <Chart title={ "React" } number={ 40 } />
-                                                <Chart title={ "Vue 3" } number={ 20 } />
-                                                <Chart title={ "WordPress" } number={ 90 } />
-                                                <Chart title={ "Illustrator" } number={ 90 } />
+                                                <Chart title={ "PHP" } number={ 70 } />
+                                                <Chart title={ "React" } number={ 30 } />
+                                                <Chart title={ "Vue 3" } number={ 10 } />
+                                                <Chart title={ "WordPress" } number={ 95 } />
+                                                <Chart title={ "Illustrator" } number={ 95 } />
                                                 <Chart title={ "Photoshop" } number={ 80 } />
                                             </ul>
                                             <ul className="skills__qualification">

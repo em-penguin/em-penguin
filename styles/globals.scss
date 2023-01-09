@@ -606,6 +606,26 @@ a {
       .skills__wrapper {
         .skills__language {
           margin-bottom: 2vw;
+          .chart {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            .chart__title {
+              width: 25%;
+            }
+            .chart__bar {
+              width: 75%;
+              height: 8px;
+              background-color: $sub-color;
+              .chart__bar-color {
+                height: 100%;
+                display: block;
+                background: $main-color;
+                background-image: $background-image;
+              }
+            }
+          }
         }
       }
     }
@@ -615,14 +635,13 @@ a {
 @media screen and (max-width: 768px) {
   #about {
     .about {
-      padding: 1vw 5vw;
+      padding: 5vw;
       text-align: initial;
       .title {
         margin-bottom: 2vw;
       }
       .about__title {
         text-align: center;
-        margin-top: 3vw;
       }
       .about__img {
         padding-bottom: 0 !important;
@@ -685,6 +704,40 @@ a {
             }
             &:last-child {
               border-image: linear-gradient(to bottom, $main-color 60%, rgba($main-color, 0)) 1 100%;
+            }
+          }
+        }
+      }
+      .skills__wrapper {
+        .skills__language {
+          margin-bottom: 2vw;
+          .chart {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            .chart__title {
+              width: 30%;
+            }
+            .chart__bar {
+              width: 70%;
+              height: 5px;
+              background-color: $sub-color;
+              .chart__bar-color {
+                height: 100%;
+                display: block;
+                background: $main-color;
+                background-image: $background-image;
+              }
+            }
+          }
+        }
+        .skills__qualification {
+          margin-top: 2vw;
+          li {
+            display: flex;
+            .skills__qualification-date {
+              padding-right: 2vw;
             }
           }
         }
